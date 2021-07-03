@@ -1,0 +1,35 @@
+body
+{
+	text-align: center;
+}
+
+.grid-container
+{
+	display: grid;
+	grid-template-columns:repeat(3 , 1fr);
+/*	grid-column-gap: 20px;
+	grid-row-gap: 20px;*/
+	grid-gap: 20px 50px;
+	/*grid-gap: space_of_row space_of_column;*/
+}
+
+.grid-container > .item
+{
+	padding: 30px;
+	background-color: #333;
+	color: #fff;
+	margin: 5px 0;
+}
+
+.grid-container .nested-grid
+{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-gap: 10px;
+}
+
+.grid-container .nested-grid p
+{
+	background-color: #080;
+	padding: 10px;
+}

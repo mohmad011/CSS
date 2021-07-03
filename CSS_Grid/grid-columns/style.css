@@ -1,0 +1,23 @@
+body
+{
+	text-align: center;
+}
+
+.grid-container
+{
+	display: grid;
+	/*grid-template-columns: first-column second-column ... */
+	/*grid-template-columns: 15% 15% 15% 15% 15% 15%;*/
+	/*grid-template-columns:repeat(6 , 16.6%);*/
+	/*grid-template-columns:1fr 1fr 1fr;*/
+	/*grid-template-columns:repeat(3 , 1fr);*/
+	grid-template-columns:1fr 2fr 1fr;
+}
+
+.grid-container > .item
+{
+	padding: 30px;
+	background-color: #333;
+	color: #fff;
+	margin: 5px 0;
+}

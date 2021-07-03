@@ -1,0 +1,48 @@
+body
+{
+	text-align: center;
+}
+
+.grid-container
+{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+		"header1 header1 header1 header1"
+		"nav nav main main"
+		"aside aside main main"
+		"footer footer footer ."
+}
+
+.grid-container > *
+{
+	padding: 30px;
+	background-color: #333;
+	color: #fff;
+	margin: 5px 0;
+}
+
+header
+{
+	grid-area: header1
+}
+
+nav
+{
+	grid-area: nav
+}
+
+main
+{
+	grid-area: main
+}
+
+aside
+{
+	grid-area: aside
+}
+
+footer
+{
+	grid-area: footer
+}

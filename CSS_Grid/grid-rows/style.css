@@ -1,0 +1,27 @@
+body
+{
+	text-align: center;
+}
+
+.grid-container
+{
+	display: grid;
+	/*grid-template-rows: first-row second-row ... */
+	/*grid-template-rows: 15% 15% 15% 15% 15% 15%;*/
+	/*grid-template-rows: 200px 250px 150px 130px 230px 210px;*/
+	/*grid-template-rows:repeat(6 , 16.6%);*/
+	/*grid-template-rows:1fr 1fr 1fr;*/
+	/*grid-template-rows:repeat(3 , 1fr);*/
+	/*grid-template-rows:repeat(3 , 1fr);*/
+	/*grid-template-rows:repeat(num_of_row , height_of_row);*/
+	grid-auto-rows: minmax(200px , auto);
+	/*grid-auto-rows: minmax(minwidth , maxheight)*/
+}
+
+.grid-container > .item
+{
+	padding: 30px;
+	background-color: #333;
+	color: #fff;
+	margin: 5px 0;
+}
